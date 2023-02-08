@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>q3</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/product.js"></script>
+    </head>
+    <body>
+        <a href="/cart">Cart (<span id="numOfItems"><%=numOfItems%></span>)</a>
+        <h1><%=product.name%></h1>
+        <h2><%=product.price%></h2>
+        <h3><%=product.description%></h3>
+        <form id="addToCart">
+            <input type="hidden" id="id" value=<%=product.id%> />
+            <input type="submit" value="Add To Cart" />
+        </form>
+    </body>
+</html>
